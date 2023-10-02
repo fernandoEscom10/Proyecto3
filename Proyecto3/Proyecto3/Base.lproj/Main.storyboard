@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Proyecto3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDn-hY-1He">
+                                <rect key="frame" x="147.33333333333334" y="421" width="98.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pantalla 2"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DV3-wH-Ode"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BDn-hY-1He" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="C7c-Jm-kfh"/>
+                            <constraint firstItem="BDn-hY-1He" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="okd-NI-L6v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UIButtonScreenTwo" destination="BDn-hY-1He" id="8x6-uV-1Bk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="4"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="8h5-qT-fto">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q23-rP-jNM" customClass="ViewController2" customModule="Proyecto3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController2" id="7qH-1w-q9F" customClass="ViewController2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="N7P-Sw-owt">
+                                <rect key="frame" x="0.0" y="59" width="393" height="260.66666666666669"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO9-b7-ujF">
+                                <rect key="frame" x="16" y="345.66666666666669" width="54" height="17"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description: asdfasdfckskldieklsdcnlkds jlsdklcmmasdjc klasdcnmsdkl." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT4-W3-xag">
+                                <rect key="frame" x="16" y="394.66666666666669" width="308.33333333333331" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zY7-6g-hhg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mO9-b7-ujF" firstAttribute="top" secondItem="N7P-Sw-owt" secondAttribute="bottom" constant="26" id="2n3-bu-iYN"/>
+                            <constraint firstItem="mO9-b7-ujF" firstAttribute="top" secondItem="7qH-1w-q9F" secondAttribute="top" constant="345.66666666666669" id="JED-9d-YPO"/>
+                            <constraint firstItem="N7P-Sw-owt" firstAttribute="top" secondItem="zY7-6g-hhg" secondAttribute="top" id="X9V-Rr-386"/>
+                            <constraint firstItem="JT4-W3-xag" firstAttribute="top" secondItem="mO9-b7-ujF" secondAttribute="bottom" constant="31.999999999999943" id="ZvB-IE-XD6"/>
+                            <constraint firstItem="zY7-6g-hhg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JT4-W3-xag" secondAttribute="trailing" id="bIM-3r-ipM"/>
+                            <constraint firstItem="JT4-W3-xag" firstAttribute="leading" secondItem="zY7-6g-hhg" secondAttribute="leading" constant="16" id="fhQ-n2-Nqx"/>
+                            <constraint firstItem="zY7-6g-hhg" firstAttribute="trailing" secondItem="mO9-b7-ujF" secondAttribute="trailing" constant="323" id="kud-tZ-Zaz"/>
+                            <constraint firstItem="mO9-b7-ujF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7qH-1w-q9F" secondAttribute="leadingMargin" id="ulO-HP-0ZI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pRL-C5-6j9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754.96183206106866" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pokemon" width="348" height="386"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
