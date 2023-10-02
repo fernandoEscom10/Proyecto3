@@ -48,17 +48,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="N7P-Sw-owt">
-                                <rect key="frame" x="0.0" y="59" width="393" height="260.66666666666669"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO9-b7-ujF">
-                                <rect key="frame" x="16" y="345.66666666666669" width="54" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charmander" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO9-b7-ujF">
+                                <rect key="frame" x="16.000000000000007" y="324.66666666666669" width="119.66666666666669" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description: asdfasdfckskldieklsdcnlkds jlsdklcmmasdjc klasdcnmsdkl." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT4-W3-xag">
-                                <rect key="frame" x="16" y="394.66666666666669" width="308.33333333333331" height="40.666666666666686"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="N7P-Sw-owt">
+                                <rect key="frame" x="22" y="58.999999999999986" width="393" height="255.66666666666663"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.84999999999999998" height="1"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JT4-W3-xag">
+                                <rect key="frame" x="22" y="349" width="353" height="142.33333333333337"/>
+                                <string key="text">Description: Charmander es un pequeño lagarto bípedo. Sus características de fuego son resaltadas por su color de piel anaranjado y su cola con la punta envuelta en llamas. Charmander, como sus evoluciones Charmeleon y Charizard, tiene una pequeña llama en la punta de su cola. .</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -67,14 +70,16 @@
                         <viewLayoutGuide key="safeArea" id="zY7-6g-hhg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mO9-b7-ujF" firstAttribute="top" secondItem="N7P-Sw-owt" secondAttribute="bottom" constant="26" id="2n3-bu-iYN"/>
-                            <constraint firstItem="mO9-b7-ujF" firstAttribute="top" secondItem="7qH-1w-q9F" secondAttribute="top" constant="345.66666666666669" id="JED-9d-YPO"/>
-                            <constraint firstItem="N7P-Sw-owt" firstAttribute="top" secondItem="zY7-6g-hhg" secondAttribute="top" id="X9V-Rr-386"/>
-                            <constraint firstItem="JT4-W3-xag" firstAttribute="top" secondItem="mO9-b7-ujF" secondAttribute="bottom" constant="31.999999999999943" id="ZvB-IE-XD6"/>
-                            <constraint firstItem="zY7-6g-hhg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JT4-W3-xag" secondAttribute="trailing" id="bIM-3r-ipM"/>
-                            <constraint firstItem="JT4-W3-xag" firstAttribute="leading" secondItem="zY7-6g-hhg" secondAttribute="leading" constant="16" id="fhQ-n2-Nqx"/>
-                            <constraint firstItem="zY7-6g-hhg" firstAttribute="trailing" secondItem="mO9-b7-ujF" secondAttribute="trailing" constant="323" id="kud-tZ-Zaz"/>
-                            <constraint firstItem="mO9-b7-ujF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7qH-1w-q9F" secondAttribute="leadingMargin" id="ulO-HP-0ZI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JT4-W3-xag" secondAttribute="trailing" constant="16" id="4IM-0L-NHf"/>
+                            <constraint firstItem="mO9-b7-ujF" firstAttribute="top" secondItem="N7P-Sw-owt" secondAttribute="bottom" constant="10" id="7z6-ha-eRs"/>
+                            <constraint firstItem="N7P-Sw-owt" firstAttribute="width" secondItem="7qH-1w-q9F" secondAttribute="width" id="8Sx-tk-Jtj"/>
+                            <constraint firstItem="JT4-W3-xag" firstAttribute="leading" secondItem="zY7-6g-hhg" secondAttribute="leading" constant="22" id="AR5-nq-lOm"/>
+                            <constraint firstItem="N7P-Sw-owt" firstAttribute="height" secondItem="7qH-1w-q9F" secondAttribute="height" multiplier="0.3" id="DB9-RE-6wP"/>
+                            <constraint firstItem="zY7-6g-hhg" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mO9-b7-ujF" secondAttribute="trailing" symbolic="YES" id="DJ7-W2-M0m"/>
+                            <constraint firstItem="JT4-W3-xag" firstAttribute="top" secondItem="mO9-b7-ujF" secondAttribute="bottom" constant="7.3333333333333144" id="aXP-HD-NRr"/>
+                            <constraint firstItem="N7P-Sw-owt" firstAttribute="top" secondItem="zY7-6g-hhg" secondAttribute="top" id="cus-pk-His"/>
+                            <constraint firstItem="mO9-b7-ujF" firstAttribute="leading" secondItem="zY7-6g-hhg" secondAttribute="leading" constant="16" id="dFE-ld-OvP"/>
+                            <constraint firstItem="N7P-Sw-owt" firstAttribute="leading" secondItem="zY7-6g-hhg" secondAttribute="leading" constant="22" id="roz-Ez-awd"/>
                         </constraints>
                     </view>
                 </viewController>
